@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/madhukar-30/Basic-Contact-Form.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [ solution URL here](https://github.com/madhukar-30/Basic-Contact-Form.git)
+- Live Site URL: [ live site URL here](https://madhukar-30.github.io/Basic-Contact-Form/)
 
 ## My process
 

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+/* Import Google Font 'Karla' with variable weights */
+
+/* Root Variables for Colors and Base Font Size */
+:root {
+    --Green-lighter: hsl(148, 38%, 91%);
+    --Green-medium: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+
+    --White: hsl(0, 0%, 100%);
+    --Grey-medium: hsl(186, 15%, 59%);
+    --Grey-darker: hsl(187, 24%, 22%);
+    
+    font-size: 62.5%; /* Set base font size to 62.5% for easier rem calculations */
+}
+
+/* Global Reset and Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Container Styling */
+main {
+    font-family: "Karla", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Green-lighter);
+}
+
+/* Hide all span elements by default */
+main span {
+    display: none;
+}
+
+/* Styling for the Message Sent Notification */
+.message-sent {
+    background-color: var(--Grey-darker);
+    position: absolute;
+    top: 3%;
+    width: 35%;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: none; /* Initially hidden */
+}
+
+.message-sent h2 {
+    display: flex;
+    color: var(--White);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.message-sent p {
+    color: var(--Green-lighter);
+    font-size: 1.8rem;
+}
+
+.message-sent img {
+    margin-right: 1rem;
+}
+
+/* Main Content Container */
+.main-container {
+    border-radius: 0.8rem;
+    width: 51.12%;
+    height: 75.13%;
+    padding: 4.3rem 4rem 4rem 4rem;
+    background-color: var(--White);
+}
+
+/* Header Styling */
+header {
+    font-size: 1.6rem;
+    margin-bottom: 2.6rem;
+    color: var(--Grey-darker);
+}
+
+/* Form Label Styling */
+form label {
+    display: block;
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    color: var(--Grey-darker);
+}
+
+/* Name Input Container */
+.name-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* First Name and Last Name Input Fields */
+.name1, .name2 {
+    width: 50%;
+}
+
+/* Input Styling for Name Fields */
+.name-container input {
+    width: 95%;
+    height: 4.9rem;
+    border: 1px solid var(--Grey-darker);
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.name-container input:focus {
+    outline: transparent; /* Remove default focus outline */
+}
+
+/* Email Input Styling */
+.email-container input {
+    width: 97%;
+    height: 4.9rem;
+    display: flex;
+    border: 1px solid var(--Grey-darker);
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.email-container input:focus {
+    outline: transparent;
+}
+
+/* Margin Adjustments for Email and Message Containers */
+.email-container {
+    margin-top: 29px;
+    margin-bottom: 29px;
+}
+
+/* Hover Effect for Inputs */
+.name-container input:hover, .email-container input:hover {
+    border: 1px solid hsl(169, 80%, 39%);
+    cursor: pointer;
+}
+
+/* Query Radio Button Container */
+.query > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* Label for Query Type */
+.query label[for=query-type] {
+    display: block;
+}
+
+/* Radio Button Styling */
+.query input[type="radio"] {
+    accent-color: var(--Green-medium);
+}
+
+/* Individual Query Option Containers */
+.ge, .sr {
+    display: flex;
+    border: 1px solid var(--Grey-darker);
+    width: 48%;
+    padding-left: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+/* Highlight Class for Selected Radio Button */
+.highlight {
+    background-color: var(--Green-lighter);
+    border: 1px solid var(--Green-medium);
+}
+
+/* Margin Adjustments for Query Labels */
+.query > div > div >label {
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+/* Margin Adjustments for Message Container */
+.message-container {
+    margin-top: 29px;
+    margin-bottom: 29px;
+}
+
+/* Textarea Styling */
+.message-container textarea {
+    width: 97.5%;
+    height: 10.3rem;
+    border-radius: 0.8rem;
+    resize: none; /* Disable resizing */
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.message-container textarea:focus {
+    outline: transparent;
+}
+
+/* Policy Checkbox Container */
+.policy label {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.policy {
+    display: flex;
+}
+
+/* Checkbox Styling */
+.policy input[type="checkbox"] {
+    accent-color: var(--Green-medium);
+    cursor: pointer;
+}
+
+/* Submit Button Styling */
+button[type=submit] {
+    width: 97%;
+    height: 59px;
+    border: 1px solid var(--Grey-darker);
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    background-color: var(--Green-medium);
+    color: white;
+    margin-top: 4rem;
+}
+
+/* Submit Button Hover Effect */
+button[type=submit]:hover {
+    background-color: hsl(168, 86%, 16%);
+    cursor: pointer;
+}
+
+/* Error Message Styling */
+span {
+    padding-top: 1.2rem;
+    font-size: 1.2rem;
+    color: var(--Red);
+    font-weight: 700;
+}
+
+/* Error Border for Invalid Inputs */
+input.error-border, 
+textarea.error-border {
+    border: 1px solid var(--Red);
+}
+
+/* Responsive Styling for Different Screen Sizes */
+
+/* For screens smaller than 850px */
+@media screen and (max-width: 850px) {
+    .main-container {
+        width: 90%;
+    }
+    .message-sent {
+        width: 70%;
+    }
+}
+
+/* For screens smaller than 550px */
+@media screen and (max-width: 550px) {
+    .name-container {
+        flex-direction: column;
+    }
+    .name-container > div {
+        width: 100%;
+    }
+}
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .main-container {
+        width: 95%;
+        padding: 0.5rem;
+    }
+}
